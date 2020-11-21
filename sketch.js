@@ -22,22 +22,23 @@ function draw() {
   if (keyDown("space")){
     bullet.velocityX = speed;
   }
-  if((wall.x- bullet.x< wall.width/2+bullet.width/2)&&(damage < 10))
-  {
-    bullet.velocityX= 0;
-    wall.shapeColor = "green";
-    console.log(damage);
-    
-  }
-  if((wall.x- bullet.x< wall.width/2+bullet.width/2)&&(damage > 10))
-  {
-    bullet.velocityX= 0;
-    wall.shapeColor = "red";
-    console.log(damage);
+  if((wall.x- bullet.x< wall.width/2+bullet.width/2){
+      bullet.velocityX= 0;
+     console.log(damage);
+  
+      if(damage < 10){
+        wall.shapeColor = "green"; }
+      if(damage > 10){
+        wall.shapeColor = "red"; }
     
   }
  
-
-
   drawSprites();
 }
+
+function HasCollided(){
+  
+
+
+
+
